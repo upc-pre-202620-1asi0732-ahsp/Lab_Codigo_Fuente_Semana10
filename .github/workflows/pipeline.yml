@@ -34,7 +34,7 @@ jobs:
           SONAR_ORG: upc-pre-202620-1asi0732-ahsp
           SONAR_PROJECT_KEY: upc-pre-202620-1asi0732-ahsp_Lab_Codigo_Fuente_Semana10
         run: |
-          mvn -B sonar:sonar \
+          mvn -B org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.organization=upc-pre-202620-1asi0732-ahsp \
             -Dsonar.projectKey=upc-pre-202620-1asi0732-ahsp_Lab_Codigo_Fuente_Semana10 \
